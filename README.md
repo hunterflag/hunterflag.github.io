@@ -1,4 +1,4 @@
 #Welcome!
 Here is 
-[log](./log.html)
+[log](./log.jsp)
 # hunterflag.github.io
