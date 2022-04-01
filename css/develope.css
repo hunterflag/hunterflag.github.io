@@ -1,0 +1,37 @@
+/* 開發階段使用
+用來辨認不同element之間的關係與位置
+*/
+
+/* 預設樣式 */
+* {
+	border-style: dotted;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+
+div {
+	border-style: dashed;
+	border-color: #555555;
+	border-width: 2px;
+	
+	background-color: #CCCCCC;	
+}
+
+span {
+	border-style: dashed;
+	border-color: #555555;
+	border-width: 2px;
+	
+	background-color: #CCCCCC;	
+}
+
+
+table {
+	border-style: double;
+	border-color: #555555;
+	border-width: 3px;
+	
+	background-color: #999999;	
+	//opacity: 0.8;
+}

@@ -1,0 +1,13 @@
+table, th, td {
+	border-style: solid;
+	border-width:	2px;
+	border-color: #333333;
+	
+}
+
+tr, tbody {
+	border-style: solid;
+	border-width:	4px;
+	border-color: #FF3333;
+	background-color: #0000FF;
+}
