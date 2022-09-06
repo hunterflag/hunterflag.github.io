@@ -34,5 +34,5 @@ function show_names(){
 	console.log("name_const=" + name_const);
 }
 
-//func_local();
+func_local();
 show_names();
