@@ -1,0 +1,49 @@
+<script type="text/javascript"> <!-- 非正式位置, 但還是可以執行! 因為有重整 -->
+	console.log("pos at (index, before doctype)")
+</script>
+<!DOCTYPE html>
+<script type="text/javascript"> <!-- 非正式位置, 但還是可以執行! 因為有重整  -->
+	console.log("pos at (index, before html)")
+</script>
+<html>
+<script type="text/javascript"> <!-- 非正式位置, 但還是可以執行! 因為有重整  -->
+	console.log("pos at (index, before head)")
+</script>
+<head>
+<meta charset="UTF-8">
+<title>SubWay Studio</title>
+<script type="text/javascript" src="./js/lab/import_lab.js">
+	<!-- 有 src 就不管這裡-->
+	console.log("pos at (index, in head, script, src)");	
+</script>
+<script type="text/javascript">
+	<!-- statement 沒有 ; 也可以? 壞習慣! 難保何時會出錯 -->
+	console.log("pos at (index, in head)")
+	console.log("pos at (index, in head 1)")
+	console.log("pos at (index, in head 2)")
+	console.log("pos at (index, in head 3)")
+</script>
+</head>
+<script type="text/javascript"> <!-- 非正式位置, 但還是可以執行! 因為有重整  -->
+	console.log("pos at (index, between head and body)")
+</script>
+<body>
+	<script type="text/javascript">
+		console.log("pos at (index, in body)")
+	</script>
+	Hello hunterflag.github.io ...
+	<article>
+		<a href="./log.html">log.html</a> <a
+			href="https://geekids639464916.wordpress.com/">奇科童</a>
+
+	</article>
+</body>
+
+<script type="text/javascript"> <!-- 非正式位置, 但還是可以執行! 因為有重整  -->
+	console.log("pos at (index, after body befor html)")
+</script>
+
+</html>
+<script type="text/javascript"> <!-- 非正式位置, 但還是可以執行! 因為有重整  -->
+	console.log("pos at (index, after html)")
+</script>
