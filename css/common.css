@@ -8,3 +8,25 @@ client 端支援即可, 但 chrome 不支援
 	background-color: LightGreen ;
 }
 
+aside {
+	float: right;	
+}
+
+#menu {
+	position: fixed;
+	top: 1%;
+	left: 1%;	
+	background: pink 30%;
+}
+
+details#menu{
+	margin: 1px;
+	padding: 1px;
+}
+
+
+/*
+.menu:hover {
+	open: true;
+}
+*/
