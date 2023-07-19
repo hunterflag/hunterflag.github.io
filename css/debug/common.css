@@ -1,0 +1,14 @@
+/* 多行註解
+單行註解在 Eclipse 的 CSS Editor 無法正常識別, 會出現錯誤; 但 client 端支援即可
+// 單行註解 
+*/
+
+* {
+	border-color: red;
+	border-width: 1px;	
+	border-style: dotted;
+}
+aside {
+	float: left;
+}
+
