@@ -19,6 +19,10 @@ aside {
 	background: pink 30%;
 }
 
+footer {
+	align-content: center;
+}
+
 details#menu{
 	margin: 1px;
 	padding: 1px;
