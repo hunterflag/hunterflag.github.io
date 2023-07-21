@@ -4,23 +4,40 @@
 client 端支援即可, 但 chrome 不支援
 */
 
-* {
+@font-face {
+	font-family: BopomofoRuby;
+	src: url(./font/BopomofoRuby1909-v1-Regular.ttf);
+}
+
+html {
 	background-color: LightGreen ;
 }
+
 
 aside {
 	float: right;	
 }
 
+/* 選單
+---------------------------------------------*/
 #menu {
+	z-index: 10;
 	position: fixed;
 	top: 1%;
 	left: 1%;	
-	background: pink 30%;
+
+	background: pink;
+	opacity: 0.65;
 }
 
-footer {
-	align-content: center;
+#menu:hover{
+	opacity: 0.85;
+}
+
+/* 通用
+---------------------------------------------*/
+header, footer{
+	text-align:center;
 }
 
 details#menu{
@@ -28,7 +45,12 @@ details#menu{
 	padding: 1px;
 }
 
-
+rt {
+	font-family: BopomofoRuby;
+	font-variant-east-asian: salt;
+	font-feature-settings: "salt";
+	text-orientation: upright;
+}
 /*
 .menu:hover {
 	open: true;

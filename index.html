@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=0.5" />
-<title>HunterFlag's Site</title>
+<meta name="viewport" content="
+	width=device-width, 
+	initial-scale=2.0" 
+/>
 <link href="./css/common.css" rel="stylesheet" type="text/css" />
-<link href="./css/debug/common.css" rel="stylesheet" type="text/css" />
 <!--
-<input name="dev-mode" value="enabled" type="hidden" />
+<link href="./css/debug/common.css" rel="stylesheet" type="text/css" />
 -->
+<title>HunterFlag's Site</title>
 </head>
 <body>
 	<header>
-		<h1>Hello hunterflag.github.io ...</h1>
-		<label id="label-date"></label>
-		<iframe name="menuBar" width="100%" height="30px">ddd</iframe>
-	<aside id="menu">
+		<h1><ruby>地<rt>ㄉㄧˋ</rt>
+				  下<rt>ㄒㄧㄚˋ</rt>
+				  鐵<rt>ㄊㄧㄝˇ</rt>
+				  坊<rt>ㄈㄤˊ</rt>
+			</ruby>™<br />
+		</h1>
+		<h3>Subway Studio™</h3>
+	</header>
+	<nav>
+		<details 	onMouseOver="this.open=true;" 
+					onmouseout="this.open=false;"
+					onblur="console.log('fff');">
+			<summary title="主觀的隨便寫">雜ㄐㄧˋ</summary>
+			<ul><details 	onMouseOver="this.open=true;" 
+						onmouseout="this.open=false;"
+						onblur="console.log('fff');">
+				<summary>雜技</summary>
+				<li><a href="" target="_blank">a</a> 
+				<li><a href="" target="_blank">b</a>
+				</details>
+			</ul>
+			<!-- 
+			<a href="" target="_blank" title="技術">雜技</a> 
+			 -->
+			<li><a href="" target="_blank" title="論事">雜記</a> 
+			<li><a href="" target="_blank" title="說人">雜伎</a> 
+			<li><a href="" target="_blank" title="好務">雜覬</a> 
+			<li><a href="" target="_blank" title="寄寓">雜寄</a> 
+			<li><a href="" target="_blank" title="祭口">雜祭</a> 
+			<li><a href="" target="_blank" title="WTF?">雜?</a> 
+			</>
+		</details>
+	
 		<details 	onMouseOver="this.open=true;" 
 					onmouseout="this.open=false;"
 					onblur="console.log('fff');">
@@ -23,7 +54,7 @@
 			<li><a href="./log.html" target="_blank">log.html</a> 
 			<li><a href="https://geekids639464916.wordpress.com/" target="_blank">奇科童</a>
 		</details>
-	
+		
 		<details 	onMouseOver="this.open=true;" 
 					onmouseout="this.open=false;"
 					onblur="console.log('fff');">
@@ -32,8 +63,12 @@
 			<li><a href="https://geekids639464916.wordpress.com/" target="_blank">奇科童</a>
 		</details>
 	
+	</nav>
+	
+	<iframe name="main_frame"></iframe>
+	<aside id="menu" >
+	
 	</aside>
-	</header>
 	<article>
 		
 		<ol start=1>
@@ -42,7 +77,8 @@
 	</article>
 	
 	<footer>
-		<span id="about-subway-studio">Subway Studio 地下鐵坊®™</span>©
+		地下鐵坊 ®Subway Studio™©<br />
+		<span id="content-date"></span>
 	</footer>
 </body>
 <!-- js 放在這裡, 不易影響網頁載入效率 -->
