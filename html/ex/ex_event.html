@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/ex_html5.css">
+<title>Insert title here</title>
+</head>
+<body>
+	<header>
+		<hgroup>
+		<h1>H1</h1>
+		<h2>H2</h2>
+		</hgroup>
+		<nav 
+			onBlur="console.log('Blur');"
+		>
+			nav
+		</nav>
+	</header>
+	<section>
+	
+	</section>
+	<aside style>漂浮中...</aside>
+	<div style="background: yellow;">
+		<input type="text" title="漂浮提示文" placeholder="壓底提示文" default="預設值" 
+			onKeyDown="console.log('keyDown')"
+			onKeyPress="console.log('keyPress')"
+			onKeyUp="console.log('keyUp')"
+		/>
+	</div>
+	<progress min="0" max="100" value="50">
+		進度條
+	</progress>
+	<div style="background: red;" 
+		onMouseOver="console.log('MouseOver');"
+		onMouseEnter="console.log('MouseEnter');"
+		onMouseMove="console.log('MouseMove');"
+		onMouseOut="console.log('MouseOut');"
+		onMouseLeave="console.log('MouseLeave');"
+		onBlur="console.log('Blur');"
+
+		onMouseDown="console.log('MouseDown');"
+		onMouseUp="console.log('MouseUp');"
+		onClick="console.log('Click');"
+		onContextMenu="console.log('ContextMenu');"
+		onDbClick="console.log('Double Click');"
+
+		onWheel="console.log('Wheel');"
+		onMouseWheel="console.log('MouseWheel');"
+		onScroll="console.log('Scroll');"
+		
+		onDragStart="console.log('DragStart');"
+		onDrag="console.log('Drag');"
+		onDragEnter="console.log('DragEnter');"
+		onDragOver="console.log('DragOver');"
+		onDragLeave="console.log('DragLeave');"
+		onDrop="console.log('Drop');"
+		onDragEnd="console.log('DragEnd');"
+		>
+		滑鼠測試區
+	</div>
+	<span>
+	span
+	</span>
+	<section>
+		<article>文章
+		</article>
+	<aside style="width : 40 ; height : 100 ; border-color: blue;">
+		aside
+	</aside>
+	</section>
+	<footer>
+		PC Subway Studio 
+		footer
+	</footer>
+</body>
+</html>
