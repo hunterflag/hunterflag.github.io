@@ -15,24 +15,33 @@ html {
 
 
 aside {
-	float: right;	
+	float: right;
 }
 
 /* 選單
 ---------------------------------------------*/
-#menu {
+.menu {
 	z-index: 10;
-	position: fixed;
-	top: 1%;
-	left: 1%;	
 
 	background: pink;
 	opacity: 0.65;
+	position: fixed;
 }
 
-#menu:hover{
-	opacity: 0.85;
+.menu:hover{
+	opacity: 0.92;
 }
+
+#func {
+	top: 1%;
+	left: 1%;			
+}
+
+#user {
+	top: 1%;
+	right: 1%;			
+}
+
 
 /* 通用
 ---------------------------------------------*/
@@ -50,6 +59,10 @@ rt {
 	font-variant-east-asian: salt;
 	font-feature-settings: "salt";
 	text-orientation: upright;
+}
+#main_frame{
+	width: 100%;
+	height: 100%;
 }
 /*
 .menu:hover {

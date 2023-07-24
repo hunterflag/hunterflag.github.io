@@ -18,11 +18,21 @@
 				  下<rt>ㄒㄧㄚˋ</rt>
 				  鐵<rt>ㄊㄧㄝˇ</rt>
 				  坊<rt>ㄈㄤˊ</rt>
-			</ruby>™<br />
+			</ruby>®<br />
 		</h1>
 		<h3>Subway Studio™</h3>
 	</header>
-	<nav>
+	<aside id="user" class="menu">
+		<details 	onMouseOver="this.open=true;" 
+					onmouseout="this.open=false;"
+					onblur="console.log('fff');">
+			<summary>無名過客</summary>
+			<li><a href="./sign_in.html" target="_blank">登入</a> 
+			<li><a href="./sign_up.html" target="_blank">註冊</a> 
+			<li><a href="https://geekids639464916.wordpress.com/" target="_blank">奇科童</a>
+		</details>
+	</aside>
+	<aside id="func" class="menu">
 		<details 	onMouseOver="this.open=true;" 
 					onmouseout="this.open=false;"
 					onblur="console.log('fff');">
@@ -47,28 +57,18 @@
 			</>
 		</details>
 	
-		<details 	onMouseOver="this.open=true;" 
-					onmouseout="this.open=false;"
-					onblur="console.log('fff');">
-			<summary>實驗室</summary>
-			<li><a href="./log.html" target="_blank">log.html</a> 
-			<li><a href="https://geekids639464916.wordpress.com/" target="_blank">奇科童</a>
-		</details>
 		
 		<details 	onMouseOver="this.open=true;" 
 					onmouseout="this.open=false;"
 					onblur="console.log('fff');">
 			<summary>前端</summary>
 			<li><a href="./log.html" target="_blank" width="100px" height="100px">log.html</a> 
-			<li><a href="https://geekids639464916.wordpress.com/" target="_blank">奇科童</a>
+			<li><a href="https://geekids639464916.wordpress.com/" target="main_frame">奇科童</a>
 		</details>
 	
-	</nav>
-	
-	<iframe name="main_frame"></iframe>
-	<aside id="menu" >
-	
 	</aside>
+	
+	<iframe name="main_frame" id="main_frame"></iframe>
 	<article>
 		
 		<ol start=1>
@@ -77,7 +77,7 @@
 	</article>
 	
 	<footer>
-		地下鐵坊 ®Subway Studio™©<br />
+		地下鐵坊® Subway Studio™<br />
 		<span id="content-date"></span>
 	</footer>
 </body>
