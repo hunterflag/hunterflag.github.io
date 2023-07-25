@@ -5,7 +5,10 @@
 <link rel="stylesheet" type="text/css" href="../css/ex_html5.css">
 <title>Insert title here</title>
 </head>
-<body>
+<body
+	onLoad="show-message('onLoad()');"
+	onUnLoad="show-message('onUnLoad()');"
+>
 	<header>
 		<hgroup>
 		<h1>H1</h1>
@@ -74,4 +77,9 @@
 		footer
 	</footer>
 </body>
+<script type="text/javascript">
+	function show_message(msg) {
+		console.log(msg);
+	}
+</script>
 </html>
