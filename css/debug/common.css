@@ -8,3 +8,7 @@
 	border-width: 1px;	
 	border-style: dotted;
 }
+
+:focus{
+	background-color: rgba(128, 128, 255, 0.5);
+}
