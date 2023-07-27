@@ -13,6 +13,22 @@ html {
 	background-color: LightGreen ;
 }
 
+header,
+footer {
+	width: 100%;
+	height: 15%;
+	text-align:center;
+}
+
+main　{
+	width: 100%;
+	height: 75%;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
 
 aside {
 	float: right;
@@ -22,22 +38,25 @@ aside {
 ---------------------------------------------*/
 .menu {
 	z-index: 10;
+	position: fixed;
 
 	background: pink;
 	opacity: 0.65;
-	position: fixed;
 }
 
 .menu:hover{
 	opacity: 0.92;
+	/*
+	open: true;
+	*/
 }
 
-#func {
+#func_menu {
 	top: 1%;
 	left: 1%;			
 }
 
-#user {
+#user_menu {
 	top: 1%;
 	right: 1%;			
 }
@@ -45,9 +64,6 @@ aside {
 
 /* 通用
 ---------------------------------------------*/
-header, footer{
-	text-align:center;
-}
 
 details#menu{
 	margin: 1px;
@@ -60,12 +76,8 @@ rt {
 	font-feature-settings: "salt";
 	text-orientation: upright;
 }
+
 #main_frame{
 	width: 100%;
 	height: 100%;
 }
-/*
-.menu:hover {
-	open: true;
-}
-*/

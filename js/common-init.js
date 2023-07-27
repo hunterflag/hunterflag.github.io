@@ -2,7 +2,9 @@
  * 
  */
  
+/* unit test
 common_init();
+------------------------------------ */ 
  
 function common_init(){
 	let date = Date();

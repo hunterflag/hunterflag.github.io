@@ -2,7 +2,9 @@
  * 
  */
 
+/*
 index_init();
+----------------------------------------------------*/
  
 function index_init(){
 	let date = Date();

@@ -7,12 +7,13 @@
 	initial-scale=1.0" 
 />
 <link href="./css/common.css" rel="stylesheet" type="text/css" />
-<!--
 <link href="./css/debug/common.css" rel="stylesheet" type="text/css" />
+<!--
 -->
 <title>HunterFlag's Site</title>
 </head>
 <body>
+	<!--  -------------------------------------------- -->
 	<header>
 		<h1><ruby>地<rt>ㄉㄧˋ</rt>
 				  下<rt>ㄒㄧㄚˋ</rt>
@@ -22,29 +23,49 @@
 		</h1>
 		<h3>Subway Studio™</h3>
 	</header>
-	<aside id="user" class="menu">
+
+	<!--  -------------------------------------------- -->
+	<!--  
+	 -->
+	<main>
+		<article>
+		<iframe name="main_frame" id="main_frame"></iframe>
+		
+			<ol start=1>
+				<li><a href="./html/career-faq/index.html" >求職QA:</a> 想問的, 請先看這裡,
+			</ol>
+		</article>
+	</main>
+
+	<!--  -------------------------------------------- -->
+	<footer>
+		地下鐵坊® Subway Studio™<br />
+		<span id="content-date"></span>
+	</footer>
+	<!--  -------------------------------------------- -->
+	<div id="user_menu" class="menu">
 		<details 	onMouseOver="this.open=true;" 
-					onmouseout="this.open=false;"
-					onblur="console.log('fff');">
+					onmouseout="this.open=false;">
 			<summary>無名過客</summary>
 			<li><a href="./sign_in.html" target="_blank">登入</a> 
 			<li><a href="./sign_up.html" target="_blank">註冊</a> 
 			<li><a href="https://geekids639464916.wordpress.com/" target="_blank">奇科童</a>
+			
 		</details>
-	</aside>
-	<aside id="func" class="menu">
+	</div>
+
+	<!--  -------------------------------------------- -->
+	<div id="func_menu" class="menu">
 		<details 	onMouseOver="this.open=true;" 
-					onmouseout="this.open=false;"
-					onblur="console.log('fff');">
+					onmouseout="this.open=false;">
 			<summary title="主觀的隨便寫">雜ㄐㄧˋ</summary>
-			<ul><details 	onMouseOver="this.open=true;" 
-						onmouseout="this.open=false;"
-						onblur="console.log('fff');">
+			<details 	onMouseOver="this.open=true;" 
+							onmouseout="this.open=false;">
 				<summary>雜技</summary>
 				<li><a href="" target="_blank">a</a> 
 				<li><a href="" target="_blank">b</a>
-				</details>
-			</ul>
+				
+			</details>
 			<!-- 
 			<a href="" target="_blank" title="技術">雜技</a> 
 			 -->
@@ -66,22 +87,13 @@
 			<li><a href="https://geekids639464916.wordpress.com/" target="main_frame">奇科童</a>
 		</details>
 	
-	</aside>
-	
-	<iframe name="main_frame" id="main_frame"></iframe>
-	<article>
-		
-		<ol start=1>
-			<li><a href="./html/career-faq/index.html" >求職QA:</a> 想問的, 請先看這裡,
-		</ol>
-	</article>
-	
-	<footer>
-		地下鐵坊® Subway Studio™<br />
-		<span id="content-date"></span>
-	</footer>
+	</div>
 </body>
 <!-- js 放在這裡, 不易影響網頁載入效率 -->
 <script src="./js/common-init.js"></script>
 <script src="./js/index-init.js"></script>
+<script>
+	common_init();
+	index_init();
+</script>
 </html>
