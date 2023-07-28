@@ -9,8 +9,20 @@ client 端支援即可, 但 chrome 不支援
 	src: url(./font/BopomofoRuby1909-v1-Regular.ttf);
 }
 
+@font-face {
+	font-family: KaiTiZhuYin;
+	src: url(./font/Wang-KaiTi-ZhuYin.ttf);
+}
+
 html {
 	background-color: LightGreen ;
+}
+
+header{
+/*	font-family: BopomofoRuby;	
+	color: red;		
+*/
+	font-family: KaiTiZhuYin;
 }
 
 header,
