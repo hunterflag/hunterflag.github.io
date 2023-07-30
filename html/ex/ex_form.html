@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../../css/debug/common.css" rel="stylesheet" type="text/css" />
+<title>ex-form</title>
+</head>
+
+<body>
+	<header>表格 vs 表單</header>
+	<form action="https://www.example.com" method="get" target="_blank">
+		<table>
+			<caption>表格標題</caption>
+			欄位檢查的啟動
+			<tbody>
+			<tr><th>類型<th>範例<th>備註</tr>
+			<tr><td>按鈕<td><input type="button" id="button" value="button" disabled><td>
+			<tr><td>文字<td><input type="text" required value="預設值" maxlength="5" /> 
+			<tr><td>文字區塊<td><input type="textarea" value="#99ff99" />
+			<tr><td>密碼<td><input type="password" id="password" value="password">
+			<tr><td>日期<td><input type="date" id="date" value="2022-04-10"><td>選單輸入
+			<tr><td>時間<td><input type="time" id="time" value="22:20"><td>手動嶿入
+			<tr><td>日期時間<td><input type="datetime" value="2022-04-10 22:20"><td>手動嶿入
+			<tr><td>日期時間<td><input type="datetime-local" value="2022-04-10 22:20"><td>選單輸入
+			<tr><td>email<td><input type="email">
+			<tr><td>tel<td><input type="tel" placeholder="xxx-xxx-xxx" title="xxx-xxx-xxx" reuuired value="123-456-789" pattern="\d{3}-\d{3}-\d{3}" />
+			<tr><td>color<td><input type="color" value="#ff9999"  id="color" /><td>
+			<tr><td>數值<td><input type="number" min="10" max="50" value="47"><td>限整數
+			<tr><td>月<td><input type="month" id="month" value="2011-03"/>
+			<tr><td>週<td><input type="week" id="week" value="2011-W03"/>
+			<tr><td>url<td><input type="url">
+			<tr><td>search<td><input type="search">
+			<tr><td colspan="3"><input type="reset" value="reset"><input type="submit" value="submit">
+			<!-- 
+			<tr><td><td><input type="">
+			-->
+			<tr><td>output<td><output></output>
+			</tbody>
+		</table>
+	</form>
+	<main>main</main>
+	<article>article</article>
+	<footer>footer</footer>
+</body>
+</html>
