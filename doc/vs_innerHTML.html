@@ -1,0 +1,171 @@
+<h1
+id="innerhtmlinnertexttextcontentouterhtmloutertext-屬性的差異">innerHTML、innerText、textContent、outerHTML、outerText
+屬性的差異</h1>
+<p>keywords:
+innerHTML、innerText、outerHTML|、outerText、textContent</p>
+<h2 id="摘要">摘要</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;"></th>
+<th style="text-align: center;">inner</th>
+<th style="text-align: center;">outer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">HTML</td>
+<td style="text-align: center;">innerHTML</td>
+<td style="text-align: center;">outerHTML</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">Text</td>
+<td style="text-align: center;">innerText</td>
+<td style="text-align: center;">outerText</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: center;">textContent</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>innerHTML: 該元素的全部後代, 的原始內容文字串, 包括 <tag>、與
+文字本身</li>
+<li>textContent: 是 innerHTML 的內容文字串, 拿掉 <tag>
+之後的剩餘文字</li>
+<li>innerText: 是 innerHTML 的內容文字串, 拿掉不可視元素,
+再拿掉可視元素的 <tag> 之後的剩餘文字</li>
+<li>outerHTML: 是保留該元素本身的內容, 再加上 innerHTML</li>
+<li>outerText: 是 outerHTML 的內容文字串, 拿掉不可視元素,
+再拿掉可視元素的 <tag> 之後的剩餘文字</li>
+</ul>
+<h2 id="範例">範例</h2>
+<pre><code>以 Chrom DevTool 取出單一網頁的 &lt;html&gt;元素, 依行分割比較</code></pre>
+<h3 id="innerhtml">innerHTML:</h3>
+<ul>
+<li>context node 內的 raw text,</li>
+<li>包括 後代節點, 內容包括 text、tag(含 attribute、 value)</li>
+<li>包括未顯示在 web page 的部分, 以
+<html>
+為例, 包括
+<head>
+、
+<script>
+<h2 id="section">、<link></h2></li>
+</ul>
+<pre><code>&lt;head&gt;\n
+&lt;meta charset=\&quot;UTF-8\&quot;&gt;\n
+&lt;meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1.0\&quot;&gt;\n
+&lt;link href=\&quot;../../css/common.css\&quot; rel=\&quot;stylesheet\&quot; type=\&quot;text/css\&quot;&gt;\n
+&lt;link href=\&quot;../../css/debug/common.css\&quot; rel=\&quot;stylesheet\&quot; type=\&quot;text/css\&quot;&gt;\n
+&lt;title&gt;ex-form&lt;/title&gt;\n
+&lt;/head&gt;\n\n
+&lt;body&gt;\n
+\t&lt;header&gt;表格 vs 表單&lt;/header&gt;\n
+\t&lt;form action=\&quot;https://www.example.com\&quot; method=\&quot;get\&quot; target=\&quot;_blank\&quot;&gt;\n
+\t\t\n
+\t\t\t欄位檢查的啟動\n
+\t\t\t&lt;table&gt;\n
+\t\t\t&lt;caption&gt;表格標題&lt;/caption&gt;&lt;tbody&gt;\n
+\t\t\t&lt;tr&gt;&lt;th&gt;類型&lt;/th&gt;&lt;th&gt;範例&lt;/th&gt;&lt;th&gt;備註&lt;/th&gt;&lt;/tr&gt;\n
+\t\t\t&lt;tr&gt;&lt;td&gt;按鈕&lt;/td&gt;&lt;td&gt;&lt;input id=\&quot;button\&quot; type=\&quot;button\&quot; value=\&quot;button\&quot; disabled=\&quot;\&quot;&gt;&lt;/td&gt;&lt;td&gt;\n
+\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;字串&lt;/td&gt;&lt;td&gt;&lt;input id=\&quot;text\&quot; type=\&quot;text\&quot; required=\&quot;\&quot; value=\&quot;預設值\&quot; maxlength=\&quot;5\&quot;&gt; \n
+\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;文字&lt;/td&gt;&lt;td&gt;&lt;input type=\&quot;textarea\&quot; value=\&quot;#99ff99\&quot;&gt;\n
+\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;密碼&lt;/td&gt;&lt;td&gt;&lt;input id=\&quot;password\&quot; type=\&quot;password\&quot; value=\&quot;password\&quot;&gt;\n
+...
+\t\t\t&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;\n
+\t\t&lt;/table&gt;\n
+\t&lt;/form&gt;\n
+\t&lt;main&gt;main&lt;/main&gt;\n
+\t&lt;article&gt;article&lt;/article&gt;\n
+\t&lt;footer&gt;footer&lt;/footer&gt;\n\n
+&lt;/body&gt;</code></pre>
+<h3 id="textcontent">textContent:</h3>
+<ul>
+<li>是 innerHTML 中,
+<ul>
+<li><h2 id="直接拿掉-的部分">直接拿掉 <tag> 的部分</h2></li>
+</ul>
+<pre><code>\n
+\n
+\n
+\n
+\n
+ex-form\n
+\n\n
+\n
+\t表格 vs 表單\n
+\t\n
+\t\t\n
+\t\t\t欄位檢查的啟動\n
+\t\t\t\n
+\t\t\t表格標題\n
+\t\t\t類型範例備註\n
+\t\t\t按鈕\n
+\t\t\t字串 \n
+\t\t\t文字\n
+\t\t\t密碼\n
+...
+\t\t\t\n
+\t\t\n
+\t\n
+\tmain\n
+\tarticle\n
+\tfooter\n\n</code></pre></li>
+</ul>
+<h3 id="innertext">innerText:</h3>
+<ul>
+<li>context node 內的 raw text, 包括 後代節點, 內容包括 text,
+但不含tag(含 attribute、 value)</li>
+<li>context node 內的 raw text,</li>
+<li>包括 後代節點, 內容包括 text、但不含tag(含 attribute、 value)</li>
+<li>只包括會顯示在 web page 的部分, 以
+<html>
+為例, 只有
+<body>
+, 沒有
+<head></li>
+<li>是 innerHTML 中,
+<ul>
+<li>直接拿掉不會顯示的 <tag> 部分,</li>
+<li>再將會顯示的 <tag>移除後, 剩下的 text</li>
+<li>精簡掉 行首的 white space</li>
+</ul></li>
+<li>一般元素比較 innerText 與 textContent 時, 差異是
+<ul>
+<li>white space</li>
+</ul></li>
+</ul>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 97%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th
+style="text-align: left;"><code>表格 vs 表單\n 欄位檢查的啟動\n 表格標題\n 類型\t範例\t備註\n 按鈕\t\t\n 字串\t\n 文字\t\n 密碼\t\n ... main\n article\n footer</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">```</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">``` outerText</td>
+</tr>
+</tbody>
+</table>
+<pre><code>表格 vs 表單\n
+欄位檢查的啟動\n
+表格標題\n
+類型\t範例\t備註\n
+按鈕\t\t\n
+字串\t\n
+文字\t\n
+密碼\t\n
+...
+main\n
+article\n
+footer</code></pre>
