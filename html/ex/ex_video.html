@@ -6,6 +6,7 @@
 <link href="../../css/common.css" rel="stylesheet" type="text/css" />
 <link href="../../css/debug/common.css" rel="stylesheet" type="text/css" />
 
+<!-- begin of favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="../../image/favicon/test/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="../../image/favicon/test/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="../../image/favicon/test/apple-icon-72x72.png">
@@ -23,6 +24,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<!--   end of favicon -->
 
 <title>ex-template</title>
 </head>
@@ -31,13 +33,32 @@
 	<header>中文注音標題</header>
 	<iframe width="1065" height="608" src="https://www.youtube.com/embed/v7LniYJFWJY" title="中颱卡努海警發布 週四-五最靠近 風雨最大" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	<main>main
-		<video controls autoplay muted loop title="test" width="100%">
+		<video controls muted loop title="test" width="100%">
 			<source src="../../video/COSPLAY.mp4" type="video/mp4"/>
 		</video>		
 		<article>article</article>
 		<aside>aside</aside>
 		<section>section</section>
 	</main>
-	<footer>footer</footer>
+	<footer>footer
+		<div id="content_date"></div>
+	</footer>
+<!-- begin of  -->
+	<script src="../../js/class/Common.js" type="text/javascript"></script>	
+	<script src="../../js/common-init.js" type="text/javascript"></script>	
+	<script src="../../js/debug/debug-init.js" type="text/javascript"></script>	
+	<script type="text/javascript">
+		try{
+			common_init();
+			debug_init();
+		} catch(e){
+			console.error("error dddd");	
+		}
+		
+		let c = new Common();
+		c.init();
+	</script>	
+<!--   end of  -->
+
 </body>
 </html>
